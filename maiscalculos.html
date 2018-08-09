@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RedeMath</title>
+	<link rel="stylesheet" type="text/css" href="_css/maiscalculos.css" />
+	<script type="text/javascript" src="_javascript/jquery.min.js"></script>
+	<script type="text/javascript" src="_javascript/maiscalculos.js"></script>
+</head>
+<body>
+	<div id="navMcc">
+		<h1>Mais calculos:</h1>
+		<div id="voltar"></div>
+		<div id="fechar"></div>
+	</div>
+	<section>
+		<ul id="list-mcc">
+			<li id="btrg3sp">Regra de 3 simples</li>
+			<li id="btJuros">Juros</li>
+		</ul>
+		<div id="rga3smp" class="frm">
+			<h2>Regra de 3 simples</h2>
+			<table>
+				<tr>
+					<td><input type="text" placeholder="Grandeza 1" id="gdz1sp"></td>
+					<td><input type="text" placeholder="Grandeza 2" id="gdz2sp"></td>
+				</tr>
+				<tr>
+					<td><input type="number" min="1" id="rg3cmp1" class="rg3cmp"></td>
+					<td><input type="number" min="1" id="rg3cmp2" class="rg3cmp"></td>
+				</tr>
+				<tr>
+					<td><input type="number" min="1" id="rg3cmp3" class="rg3cmp"></td>
+					<td><input type="number" min="1" id="rg3cmp4" class="rg3cmp"></td>
+				</tr>
+				<tr><td colspan="2">
+					<select id="ppcSp" style="width:220px;">
+						<option value="dp">Diretamente proporcional</option>
+						<option value="ip">Inversamente proporcional</option>
+					</select>
+				</td></tr>
+			</table>
+		</div>
+		<div id="juros" class="frm">
+			<h2>Juros</h2>
+			<table>
+			<tr>
+				<td><label for="txtcapital">Capital (C):</label></td>
+				<td><input type="number" id="txtcapital" min="1" class="juroscmp txtDinheiro" /></td>
+			</tr>
+			<tr>
+				<td><label for="txtmontante">Montante (M):</label></td>
+				<td><input type="number" id="txtmontante" min="1" class="juroscmp txtDinheiro" class="juroscmp" class="juroscmp" /><span class="aviso">montante > capital!</span></td>
+			</tr>
+			<tr>
+				<td><label for="txtjuros">Juros (J):</label></td>
+				<td><input type="number" id="txtjuros" min="1" class="juroscmp txtDinheiro" class="juroscmp" /></td>
+			</tr>
+			<tr>
+				<td><label for="txttaxa">Taxa (I):</label></td>
+				<td><input type="number" id="txttaxa" min="1" class="juroscmp" /><span class="after-input">%</span>
+				<select id="cmptaxat">
+					<option value="ad">Ao dia</option>
+					<option value="asn">A semana</option>
+					<option value="am" selected="true">Ao mês</option>
+					<option value="ab">Ao bimestre</option>
+					<option value="at">Ao trimestre</option>
+					<option value="asm">Ao semestre</option>
+					<option value="aa">Ao ano</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label for="txttempo">Tempo (T):</label></td>
+				<td><input type="number" id="txttempo" min="1" class="juroscmp" /> 
+				<select id="cmptempot">
+					<option value="ad" id="opad">Dia</option>
+					<option value="asn">Semana</option>
+					<option value="am" selected="true">Mês</option>
+					<option value="ab">Bimestre</option>
+					<option value="at">Trimestre</option>
+					<option value="asm">Semestre</option>
+					<option value="aa">Ano</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label for="jtipo">Tipo:</label></td>
+				<td>
+					<select id="jtipo" style="width: 150px;">
+						<option value="jsp">Juros Simples</option>
+						<option value="jcp" selected="true">Juros Compostos</option>
+					</select>
+				</td>
+			</tr>
+		</div>
+	</section>
+</body>
+</html>

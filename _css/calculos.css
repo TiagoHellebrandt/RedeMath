@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #606060;
+}
+hgroup h1 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #606060;
+}
+
+hgroup h3{
+    font-family: 'Poiret One', cursive;
+    text-align: right;
+    font-size: 20px;
+    color: #808080;
+    margin-right: 20px;
+}
+
+div#conteudo {
+    margin-top: 190px;
+    max-width: 100%;
+}
+
+section#artigo {
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+section#artigo p,ul {
+    text-indent: 20px;
+    font-family: verdana, sans-serif;
+    text-align: justify;
+    margin: 10px;
+}
+
+ol {
+    text-indent: 20px;
+    font-family: verdana, sans-serif;
+    text-align: justify;
+    margin: 10px;
+    font-size: 18px;
+}
+
+ol li{
+    padding: 5px;
+}
+
+ol ul li p {
+    font-family: verdana, sans-serif;
+    font-size: 15px;
+}
+
+section#artigo h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-indent: 10px;
+    background-color: #606060;
+    padding: 5px;
+    margin: 5px;
+}
+
+td.ln2 {
+    border-bottom: 1px solid black;
+}
+
+td.brf {
+    border-top: 1px solid black;
+}
+
+#exemplos {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+}
+
+table.exemplo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 10px;
+    border-spacing: 0px;
+    display: inline-block;
+}
+
+table.exemplo td {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+}
+
+table.exemplo td.bb {
+    border-bottom: 1px solid black;
+}
+
+table.exemplo td.udc {
+    font-size: 12px;
+    text-align: center;
+}
+
+div#exercicios {
+    display: block;
+    font-family: Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+input.resexe {
+    font-size: 12px;
+}
+
+#btncrg {
+    display: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    background-color: #4c7cff;
+}
+
+p a{
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+table#ttab {
+    border: 2px solid #606060;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+table#ttab td {
+    border: 2px solid #606060;
+    text-align: center;
+    background-color: #808080;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+}
+
+p#nota {
+    text-indent: 0px;
+}
+
+#lateral-esq {
+    position: absolute;
+    left: 1px;
+}
+
+#ntabm {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+
+#imgFormaGeral {
+    position: relative;
+    left: 100px;
+}
+
+h3 {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.formulas {
+    position: relative;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    border: 3px solid #00a2ff;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
+
+.formulas td {
+    padding: 5px;
+    color: #00a2ff;
+}
+
+.formulas td table {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+}
+
+.frlTtl td {
+    color: #ffffff;
+    background-color: #00a2ff;
+}
+
+.formulas .btmBorder {
+    border-bottom: 1px solid #00a2ff;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+img {
+    max-width: 100%;
+}

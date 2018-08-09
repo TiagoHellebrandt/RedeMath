@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+#conteudo {
+	z-index: -1;
+}
+
+#configExe {
+	display: block;
+	box-shadow: -1px 1px 20px rgba(0,0,0,0.5);
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 190px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-family: Verdana, sans-serif;
+  	-webkit-animation-delay: 0.8s;
+  	-webkit-animation-duration: 1s;
+  	max-width: 99%;
+  	margin-bottom: 10px;
+}
+
+#configCont {
+	position: relative;
+	width: 417px;
+	height: 300px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
+	top: 30px;
+	max-width: 98%;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+#configCont td {
+	text-align: center;
+	max-width: 88px;
+	max-height: 1px;
+	font-size: 14px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#configCont td img {
+	width: 50px;
+}
+
+#configCont td:hover, li:active {
+	box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#configCont table{
+	border-spacing: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.selecao {
+	border-bottom: 3px solid #00a2ff;
+	color: #00a2ff;
+}
+
+.selecaoLi {
+	border-left: 3px solid #00a2ff;
+	color: #00a2ff;
+}
+
+#configNivel {
+	position: relative;
+	width: 420px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
+	max-width: 98%;
+	margin-top: 40px;
+	border-radius: 3px;
+}
+
+#configNivel button {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	padding: 10px;
+	text-align: center;
+	width: 136px;
+	cursor: pointer;
+	height: 40px;
+}
+
+#configNivel button:hover {
+	box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
+}
+
+input,button:focus {
+	outline: none;
+}
+
+#configTempo {
+	position: relative;
+	width: 417px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
+	max-width: 98%;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+#configTempo button {
+	width: 205.5px;
+	height: 40px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+
+#configTempo button:hover {
+	box-shadow: -1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.balao input {
+	width: 2.3em;
+}
+
+form input {
+	position: relative;
+	width: 100px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	border: 3px solid #90ee90;
+	background-color: #ffffff;
+	font-family: Verdana, sans-serif;
+	color: #90ee90;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 45px;
+	margin-bottom: 10px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+}
+
+form {
+	position: relative;
+	width: 100px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form input:hover {
+	background-color: #90ee90;
+	color: #ffffff;
+}
+
+form input:focus {
+	background-color: #90ee90;
+	color: #ffffff;
+}
+
+.balao{
+	position: relative;
+	background: #f1f1f1;
+	width: 138px;
+	height: 23px;
+	padding: 5px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 3px;
+}
+.balao:after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: relative;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f1f1f1;
+	top: -55px;
+	left: 20px;
+}
+
+h2 {
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	background-color: #d5d5d5;
+	padding: 15px;
+}
+
+.configMenor {
+	display: none;
+	list-style: none;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-spacing: 0px;
+}
+
+.configMenor li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+#varConfig {
+	display: none;
+}
+
+#configQtd {
+	position: relative;
+	width: 417px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f1f1f1;
+	max-width: 98%;
+	margin-top: 10px;
+	border-radius: 3px;
+	padding-bottom: 20px;
+}
+
+#configQtd span {
+	font-size: 20px;
+	padding: 10px;
+	bottom: -10px;
+	position: relative;
+}
+
+#configQtd input {
+	position: relative;
+	padding: 10px;
+	width: 50px;
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+
+#configQtd input:focus {
+	border-color: rgba(0,162,255,0.8);
+}

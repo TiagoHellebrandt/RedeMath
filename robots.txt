@@ -1,0 +1,3 @@
+user-agent:*
+disallow:/_imagens
+sitemap:http://www.redemath.com/sitemap.xml

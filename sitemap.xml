@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.redemath.com/</loc>
+  <lastmod>2016-02-25T23:59:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/operacoes.html</loc>
+  <lastmod>2016-02-25T23:59:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/soma/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/subtracao/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/multiplicacao/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/divisao/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/equacao_do_primeiro_grau/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/conteudos/equacao_do_segundo_grau/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.redemath.com/exercicios/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

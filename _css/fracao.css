@@ -1,0 +1,17 @@
+.btmBorder {
+    border-bottom: 1px solid #000000;
+}
+
+.frc td {
+    padding: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.frc {
+    display: inline-block;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 0px;
+}

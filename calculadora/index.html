@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br" onkeydown="dwEx();" onkeyup="upEx();">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Tiago Hellebrandt Silva"/>
+    <meta name="description" content="Calcule, Entenda, Estude, Aprenda. Digite expressões numéricas, equações do 1° e 2° e etc, e o passo-a-passo do calculo + resultado aparecera em milésimos.">
+    <meta name="robots" content="index,follow"/>
+    <meta name="googletbot" content="index,follow"/>
+    <meta http-equiv="content-language" content="pt-br">
+    <meta content='Global' name='distribution'>
+    <title>Calculadora online (passo a passo) - RedeMath</title>
+    <link rel="stylesheet" type="text/css" href="../_css/style.css" />
+    <link rel="shortcut icon" href="../_imagens/LogoRedeMath-icone.png" />
+    <link rel="stylesheet" type="text/css" href="../_css/calculadora.css" />
+    <link rel="stylesheet" href="../_css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/animacao.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/loading.css" />
+    <script type="text/javascript" src="../_javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../_javascript/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../_javascript/calculadora.js"></script>
+    <script language="javascript" type="text/javascript" src="../_javascript/principal.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../_css/resultados.css" />
+    <link rel="stylesheet" href="../_css/fracao.css" />
+    <link rel="stylesheet" href="../_css/divisao.css" />
+    <link rel="stylesheet" type="text/css" href="../_css/radiciacao.css" />
+    <script type="text/javascript" src="../_javascript/resultados.js"></script>
+    <script type="text/javascript" src="../_javascript/editCalc.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68775298-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="backgroundRes"></div>
+    <nav id="menu" style="position: absolute;">
+        <img src="../_imagens/menu-icone.png" style="position: absolute;" class="animated bounceInRight" />
+    </nav>
+    <div id="areaCalc">
+        <div id="logo" class="animated bounceInDown"></div>
+        <form id="calcula" class="animated bounceInDown">
+            <div id="ex" name="ex" contenteditable="true"></div>
+            <img src="../_imagens/maiscalculos.png" title="Mais calculos..." alt="Teclado" id="btnmcc"draggable="false"  class="objTool"/>
+            <img src="../_imagens/tecladoIcone-RedeMath-hide.png" title="Teclado" alt="Teclado" id="btntcd" draggable="false"  class="objTool"/>
+            <input type="image" src="../_imagens/seta.png" alt="submit" id="btnsbm" class="btnst" onfocus="abrirBtnsbm();" draggable="false" onclick="abrirBtnsbm();" />
+        </form>
+    </div>
+    <div id="tooltip"></div>
+    <div id="teclado">
+        <div id="cabTecla"></div>
+        <table>
+            <tr>
+                <td><button id="a" class="tlcletras" onclick="preenche(this.id);" >a</button></td>
+                <td><button id="b" class="tlcletras" onclick="preenche(this.id);" >b</button></td>
+                <td><button id="c" class="tlcletras" onclick="preenche(this.id);" >c</button></td>
+                <td><button id="d" class="tlcletras" onclick="preenche(this.id);" >d</button></td>
+                <td><button id="e" class="tlcletras" onclick="preenche(this.id);" >e</button></td>
+                <td><button id="f" class="tlcletras" onclick="preenche(this.id);" >f</button></td>
+                <td><button id="igl" class="tlcop" onclick="preenche(this.id);" >=</button></td>
+                <td><button id="xqrd" class="tlcexp" onclick="preenche(this.id);" >x<sup>2</sup></button></td>
+                <td><button id="ap" class="tlcop" onclick="preenche(this.id);" >&larr;</button></td>
+            </tr>
+            <tr>
+                <td><button id="g" class="tlcletras" onclick="preenche(this.id);" >g</button></td>
+                <td><button id="h" class="tlcletras" onclick="preenche(this.id);" >h</button></td>
+                <td><button id="i" class="tlcletras" onclick="preenche(this.id);" >i</button></td>
+                <td><button id="j" class="tlcletras" onclick="preenche(this.id);" >j</button></td>
+                <td><button id="k" class="tlcletras" onclick="preenche(this.id);" >k</button></td>
+                <td><button id="l" class="tlcletras" onclick="preenche(this.id);" >l</button></td>
+                <td><button id="7" class="tlcnum" onclick="preenche(this.id);" >7</button></td>
+                <td><button id="8" class="tlcnum" onclick="preenche(this.id);" >8</button></td>
+                <td><button id="9" class="tlcnum" onclick="preenche(this.id);" >9</button></td>
+            </tr>
+            <tr>
+                <td><button id="m" class="tlcletras" onclick="preenche(this.id);" >m</button></td>
+                <td><button id="n" class="tlcletras" onclick="preenche(this.id);" >n</button></td>
+                <td><button id="o" class="tlcletras" onclick="preenche(this.id);" >o</button></td>
+                <td><button id="p" class="tlcletras" onclick="preenche(this.id);" >p</button></td>
+                <td><button id="q" class="tlcletras" onclick="preenche(this.id);" >q</button></td>
+                <td><button id="r" class="tlcletras" onclick="preenche(this.id);" >r</button></td>
+                <td><button id="4" class="tlcnum" onclick="preenche(this.id);" >4</button></td>
+                <td><button id="5" class="tlcnum" onclick="preenche(this.id);" >5</button></td>
+                <td><button id="6" class="tlcnum" onclick="preenche(this.id);" >6</button></td>
+            </tr>
+            <tr>
+                <td><button id="s" class="tlcletras" onclick="preenche(this.id);" >s</button></td>
+                <td><button id="t" class="tlcletras" onclick="preenche(this.id);" >t</button></td>
+                <td><button id="u" class="tlcletras" onclick="preenche(this.id);" >u</button></td>
+                <td><button id="v" class="tlcletras" onclick="preenche(this.id);" >v</button></td>
+                <td><button id="w" class="tlcletras" onclick="preenche(this.id);" >w</button></td>
+                <td><button id="x" class="tlcletras" onclick="preenche(this.id);" >x</button></td>
+                <td><button id="1" class="tlcnum" onclick="preenche(this.id);" >1</button></td>
+                <td><button id="2" class="tlcnum" onclick="preenche(this.id);" >2</button></td>
+                <td><button id="3" class="tlcnum" onclick="preenche(this.id);" >3</button></td>
+            </tr>
+            <tr>
+                <td><button id="y" class="tlcletras" onclick="preenche(this.id);" >y</button></td>
+                <td><button id="z" class="tlcletras" onclick="preenche(this.id);" >z</button></td>
+                <td><button id="mais" class="tlcop" onclick="preenche(this.id);" >+</button></td>
+                <td><button id="menos" class="tlcop" onclick="preenche(this.id);" >-</button></td>
+                <td><button id="vezes" class="tlcop" onclick="preenche(this.id);" >*</button></td>
+                <td><button id="divi" class="tlcop" onclick="preenche(this.id);" >&div;</button></td>
+                <td><button id="0" class="tlcnum" onclick="preenche(this.id);" >0</button></td>
+                <td></td>
+                <td><button id="vir" class="tlcop" onclick="preenche(this.id);" >,</button></td>
+            </tr>
+            <tr>
+                <td><button id="parenteseAbre" class="tlcop" onclick="preenche(this.id);" >(</button></td>
+                <td><button id="parenteseFecha" class="tlcop" onclick="preenche(this.id);" >)</button></td>
+                <td><button id="concheteAbre" class="tlcop" onclick="preenche(this.id);" >[</button></td>
+                <td><button id="concheteFecha" class="tlcop" onclick="preenche(this.id);" >]</button></td>
+                <td><button id="chaveAbre" class="tlcop" onclick="preenche(this.id);" >{</button></td>
+                <td><button id="chaveFecha" class="tlcop" onclick="preenche(this.id);" >}</button></td>
+                <td><button id="radical" class="tlcexp" onclick="preenche(this.id);" >√</button></td>
+                <td><button id="pontoevir" class="tlcop" onclick="preenche(this.id);" >;</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="pgt-mmc-mdc">
+        <input type="button" value="mmc"/>
+        <input type="button" value="mdc"/>
+    </div>
+    <iframe src="../maiscalculos.html" id="mcc"></iframe>
+    <div class="sk-double-bounce" id="loading">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+    </div>
+    <!-- <div id="bloco-err">
+        <h1>Ajude a melhorar</h1>
+        <p>Se você encontrou algum problema no calculo clique no botão “Enviar” para que o mesmo seja corrigido.</p>
+        <p style="background-color: #f3f3f3;">Caso preencher o formulário abaixo, ao termino do correção do problema você será notificado(a).</p>
+        <div id="eml-inv-err">E-mail invalido!</div>
+        <form method="get" action="../err" id="form-err">
+            <input type="text" name="nome" placeholder="Nome" id="nm-err" />
+            <input type="text" name="email" placeholder="E-mail" id="eml-err" />
+            <textarea name="msg" placeholder="Comentário" id="msg-err"></textarea>
+            <input type="text" name="ex" id="ex-err" readonly="true" value="<?php echo $EX;?>" />
+            <input type="button" value="Fechar" id="cnl-err" />
+            <input type="submit" value="Enviar" id="evr-err" />
+        </form>
+    </div> -->
+    <div id="blq"></div>
+    <iframe src="../menu.html" id="orc"></iframe>
+    <div id="fblike"><div class="fb-like" id="curtiecomp" data-href="https://www.facebook.com/redemath" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div></div>
+</body>
+
+</html>

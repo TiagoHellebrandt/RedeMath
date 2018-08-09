@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+.tableRaiz {
+    border-spacing: 0px;
+}
+
+.tableRaiz td {
+    padding: 0px;
+}
+
+.radicando {
+    /*border-top: 1px solid #000;*/
+    padding-top: 0px;
+    vertical-align: top;
+}
+
+.radicando:before {
+    content: "";
+    top: 2px;
+    position: absolute;
+    width: calc(100% - 10px);
+    margin-left: -2px;
+    border-top: 2px solid #000000;
+}
+
+.radical {
+    font-size: 23px;
+    text-align: right;
+}

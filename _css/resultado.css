@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+#resultado {
+	position: absolute;
+	top: 190px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 450px;
+	max-width: 98%;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	z-index: -1;
+	-webkit-animation-delay: 0.6s;
+	border-radius: 2px;
+}
+
+#desenhoAcertos {
+	position: relative;
+	left: 50%;
+	margin-left: -90px;
+	margin-top: 10px;
+}
+
+#infoRes {
+	border-spacing: 0px;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+	border: 3px solid #00a2ff;
+}
+
+#infoRes td {
+	padding: 4px;
+	border: 3px solid #00a2ff;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+}
+
+.tdNome {
+	background-color: #00a2ff;
+	color: #ffffff;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.tdInfo {
+	text-align: center;
+	color: #00a2ff;
+}
+
+input[type="button"] {
+	position: relative;
+	padding: 5px;
+	background-color: #ffffff;
+	border: 2px solid #90ee90;
+	color: #90ee90;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	border-radius: 2px;
+	cursor: pointer;
+	/*margin: 10px;*/
+	margin-top: 15px;
+	transition: 0.2s;
+}
+
+#btnEst {
+	left: 5px;
+}
+
+#btnExer {
+	position: absolute;
+	right: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type="button"]:hover {
+	color: #ffffff;
+	background-color: #90ee90;
+}
+
+*:focus {
+    outline: none;
+}

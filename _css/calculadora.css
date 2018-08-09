@@ -1,0 +1,395 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+div#logo {
+    background: url("../_imagens/LogoRedeMath.png") no-repeat;
+    width: 450px;
+    height: 130px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -225px;
+    max-width: 100%;
+    background-position: bottom;
+    z-index: -1;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+
+form#calcula {
+    position: relative;
+    top: 50%;
+    width: 450px;
+    min-height: 53px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    /*border: 1px solid rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 100%;
+    transition: 0.08s;
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+#areaCalc {
+    position: absolute;
+    transition: 0.5s;
+    width: 450px;
+    max-width: 95%;
+    margin-left: -225px;
+    top: 50%;
+    left: 50%;
+}
+
+#ex {
+    width: 325px;
+    font-size: 23px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'PT-sans', sans-serif;
+    max-width: 95%;
+    position: relative;
+    margin-left: 5px;
+    padding-top: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btnst {
+    position: absolute;
+    margin-top: -15px;
+    margin-right: 2px;
+    top: 50%;
+    left: 50%;
+    margin-left: 180px;
+    display: none;
+    transition: 0.3s;
+}
+
+#teclado button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 1px;
+}
+
+@media screen and (min-width: 450px){
+    #teclado button:hover {
+        box-shadow: -1px 2px 10px rgba(0,0,0,0.5);
+    }
+}
+
+#teclado button:active {
+    box-shadow: inset -1px 2px 10px rgba(0,0,0,0.5);
+}
+
+#teclado {
+    display: none;
+    padding: 8px;
+    box-shadow: -2px 2px 16px rgba(0,0,0,0.5);
+    width: 308px;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 50%;
+    margin-top: 55px;
+    height: 235px;
+    background: url("../_imagens/titulo-teclado.png") no-repeat 50% 5px;
+    background-color: #ffffff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+#teclado .tlcletras {
+    background-color: #DCDCDC;
+}
+
+#teclado .tlcnum {
+    background-color: #A9A9A9;
+}
+
+#teclado .tlcop {
+    background-color: #C0C0C0;
+}
+
+#teclado .tlcexp {
+    background-color: #D3D3D3;
+}
+
+#teclado button:focus{
+    outline: none;
+}
+
+#teclado table {
+    margin-top: 30px;
+    position: absolute;
+    border-spacing: 2px;
+}
+
+#cabTecla {
+    position: absolute;
+    height: 38px;
+    background-color: rgba(0,0,0,0);
+    cursor: move;
+    width: 322px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#btntcd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: 170px;
+    cursor: pointer;
+}
+
+#btntcd:focus {
+    outline: none;
+}
+
+#btnmcc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: 135px;
+    cursor: pointer;
+}
+
+#infoMenu {
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    background-image: url("../_imagens/info-menu.png");
+    right: 110px;
+    top: 30px;
+    display: none;
+    z-index: -1;
+}
+
+#infoEx {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    margin-left: -495px;
+    margin-top: -50px;
+}
+
+#infoEx h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    margin: 5px;
+}
+
+#infoEx p {
+    text-indent: 10px;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    text-align: justify;
+    margin: 10px;
+    background-color: #ffffff;
+    height: 51px;
+}
+
+#infoEx:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    top: 65px;
+    background-color: #ffffff;
+    right: -10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    z-index: -1;
+}
+
+#infoEx:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ffffff;
+    top: 60px;
+    right: -13px;
+}
+
+#infoEx a {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #90ee90;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+#infoEx a:hover {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+#pgt-mmc-mdc {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin-left: 170px;
+    margin-top: -70px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+#pgt-mmc-mdc:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 55px;
+    left: 18px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+#pgt-mmc-mdc:after {
+    content: "";
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#pgt-mmc-mdc input[type="button"] {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+#pgt-mmc-mdc input[type="button"]:hover {
+     background-color: #f3f3f3;
+}
+
+#mcc {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    width: 395px;
+    height: 280px;
+    animation-duration: 1s;
+}
+
+#backgroundRes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0px;
+    background-color: #00a2ff;
+    z-index: -1;
+}
+
+.inBgRes{
+    -webkit-animation: inBackgroundRes 0.5s;
+    -moz-animation: inBackgroundRes 0.5s;
+    animation: inBackgroundRes 0.5s;
+}
+
+.outBgRes {
+    -webkit-animation: outBackgroundRes 0.5s;
+    -moz-animation: outBackgroundRes 0.5s;
+    animation: outBackgroundRes 0.5s;
+}
+
+@-webkit-keyframes inBackgroundRes{
+    0% {height: 0;opacity: 0;}
+    100% {height: 210px;opacity: 1;}
+}
+
+@keyframes inBackgroundRes{
+    0% {height: 0;opacity: 0;}
+    100% {height: 210px;opacity: 1;}
+}
+
+@-moz-keyframes inBackgroundRes{
+    0% {height: 0;opacity: 0;}
+    100% {height: 210px;opacity: 1;}
+}
+
+@-webkit-keyframes outBackgroundRes{
+    0% {height: 210px;opacity: 0;}
+    100% {height: 0px;opacity: 1;}
+}
+
+@keyframes outBackgroundRes{
+    0% {height: 210px;opacity: 0;}
+    100% {height: 0px;opacity: 1;}
+}
+
+@-moz-keyframes outBackgroundRes{
+    0% {height: 210px;opacity: 0;}
+    100% {height: 0px;opacity: 1;}
+}
+
+#loading {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

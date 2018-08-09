@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+/* Corpo do site */
+
+* {
+    margin: 0px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*:focus {
+    outline: none;
+}
+
+::-moz-selection {
+    background-color:#00a2ff;
+    color:#ffffff;
+}
+
+::-webkit-selection {
+    background-color:#00a2ff;
+    color:#ffffff;
+}
+
+::selection {
+    background-color:#00a2ff;
+    color:#ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Cabecalho */
+
+header#cabecalho {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    box-shadow: -5px 3px 25px rgba(1,1,1,0.6);
+    background-color: #ffffff;
+    max-width: 100%;
+    z-index: 2;
+}
+
+/* Menu Principal */
+nav#menu {
+    display: block;
+    right: 20px;
+    position: fixed;
+}
+
+#menu img,#menu .iconMenu {
+    position: fixed;
+    right: 25px;
+    margin-top: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: 0.2s;
+    padding: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav#menu img:hover nav#menu .iconMenu:hover {
+    background-color: rgba(0,162,255,0.2);
+}
+
+#orc {
+    position: fixed;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.6);
+    width: 380px;
+    height: 100%;
+    right: -415px;
+    top: 0px;
+    padding: 0px;
+    z-index: 2;
+    border-right: 25px solid #ffffff;
+    -webkit-animation-delay: -0.2s;
+    -moz-animation-delay: -0.2s;
+    transition: 0.3s;
+}
+
+.info {
+    background-color: #87CEEB;
+    padding: 5px;
+    text-indent: 10px;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    border-left: 8px solid #778899;
+    border-radius: 2px;
+    position: fixed;
+}
+
+.info:hover {
+    box-shadow: -1px 0px 5px rgba(0,0,0,0.5);
+}
+
+.btnfechar {
+    background: url("../_imagens/botao-fechar.png") no-repeat;
+    right: 1px;
+    top: 1px;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    width: 22px;
+    height: 22px;
+}
+.btnfechar:hover {
+    background: url("../_imagens/botao-fechar-over.png") no-repeat;
+}
+
+#mylogo {
+    background: url("../_imagens/LogoRedeMath-pequeno.png") no-repeat;
+    width: 300px;
+    height: 87px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+#cabExe {
+    display: block;
+    position: fixed;
+    background-color: #00a2ff;
+    width: 100%;
+    height: 80px;
+    top: 80px;
+    box-shadow: -5px 3px 25px rgba(1,1,1,0.6);
+    z-index: 1;
+}
+
+#cabExe h1 {
+    color: #ffffff;
+    font-family: Gulim, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+
+#tooltip {
+    display: none;
+    position: fixed;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    top: 20px;
+    z-index: 2;
+    border-radius: 2px;
+}
+
+#tooltip:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(0,0,0,0.6);
+    top: -8px;
+}
+
+#blq {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.08);
+    z-index: 2;
+}
+
+#legenda {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #00a2ff;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    display: none;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    animation: anmtLegenda 0.5s;
+    -moz-animation: anmtLegenda 0.5s;
+    z-index: 1;
+}
+
+#legenda:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -19px;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 19px solid #00a2ff;
+    -moz-border-top: 25px solid #000;
+    -moz-border-bottom: 25px solid #000;
+    -moz-border-left: 25px solid #00a2ff;
+}
+
+@keyframes anmtLegenda{
+    0% {
+        opacity: 0;
+        margin-left: 2%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-moz-keyframes anmtLegenda{
+    0% {
+        opacity: 0;
+        margin-left: 2%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #00a2ff;
+    background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.3) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0.3) 75%,
+      transparent 75%,
+      transparent)
+}

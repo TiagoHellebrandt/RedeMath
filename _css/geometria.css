@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+#palco {
+	position: fixed;
+}
+
+#tools {
+	position: absolute;
+	left: 20px;
+	margin-top: 35px;
+	list-style: none;
+}
+
+#tools li {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 100%;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-position: 5px;
+	background-repeat: no-repeat;
+}
+
+#tools li:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#toolPan {
+	background-image: url("../_imagens/tool-pan.png");
+}
+
+#toolLine {
+	background-image: url("../_imagens/tool-line.png");
+}
+
+#toolSelect {
+	background-image: url("../_imagens/tool-select.png");
+}
+
+#toolRemove {
+	background-image: url("../_imagens/tool-remove.png");
+}
+
+#itens {
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	list-style: none;
+	padding: 10px;
+	display: none;
+}
+
+#itens li {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#itens>li td:first-child {
+	background-image: url("../_imagens/checkbox0.png");
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 30px;
+}
+
+#itens li:hover {
+	background-color: #f3f3f3;
+}
+
+#tamanho {
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 220px;
+	height: 120px;
+}
+
+#tamanho h2 {
+	text-align: center;
+    font-family: 'Poiret One', sans-serif;
+    margin-top: 5px;
+}
+
+#txtTam{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding: 3px;
+	margin-top: 15px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.2);
+	font-family: 'PT Sans', sans-serif;
+}
+
+#txtTam:focus {
+	border: 1px solid rgba(0,162,255,0.5);
+}
+
+#tamanho input[type="button"]{
+	position: absolute;
+	bottom: 5px;
+	border: none;
+	box-shadow: 0 0 2px rgba(0,0,0,0.4);
+	padding: 6px;
+	background-color: #f0f0f0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#tamanho input[type="button"]:active {
+	box-shadow: inset 0 0 2px rgba(0,0,0,0.4);
+}

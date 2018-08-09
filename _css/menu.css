@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+.o {
+    padding: 0px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-spacing: 8px;
+    margin-bottom: 100px;
+}
+
+.o td{
+    vertical-align: bottom;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.o a{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    color: #00a2ff;
+    text-decoration: none;
+}
+
+.o td:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+#outros {
+    margin-top: 0px;
+    display: none;
+}
+
+header h1 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+
+header {
+    padding: 5px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 280px;
+    position: fixed;
+    top: 0px;
+    box-shadow: -1px 1px 10px rgba(0,0,0,0.5);
+}
+
+#conteudosOp {
+    margin-left: 100px;
+}
+
+nav {
+    background-color: #00a2ff;
+    box-shadow: -1px 1px 10px rgba(0,0,0,0.5);
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#opcoes {
+    position: absolute;
+    height: 278px;
+    top: 50%;
+    margin-top: -139px;
+}
+
+#opcoes div {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#opcoes div:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    width: 80px;
+    height: 80px;
+    margin: 7.5px;
+}
+
+#opcoes div img {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    transition: 0.5s;
+}

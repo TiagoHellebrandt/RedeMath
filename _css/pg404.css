@@ -1,0 +1,14 @@
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+span {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 28px;
+    color: #808080;
+    margin-top: 170px;
+    position: absolute;
+    width: 100%;
+}

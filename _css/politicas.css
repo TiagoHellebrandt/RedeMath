@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*
+	*Folha de estilo CSS
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+/* Corpo do site */
+
+#conteudo {
+    margin-top: 180px;
+}
+
+* {
+  font-family: "Roboto Mono";
+}
+
+p {
+  margin: 10px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+h1 {
+  margin: 5px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 15px;
+}
+
+#lastUpdate {
+  margin: 15px;
+  text-align: right;
+}

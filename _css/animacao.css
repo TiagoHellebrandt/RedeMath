@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+@keyframes topHeightPlus {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 280px;
+    }
+}
+
+@-webkit-keyframes topHeightPlus {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 280px;
+    }
+}
+
+.topHeightPlus {
+    animation-name: topHeightPlus;
+    -webkit-animation-name: topHeightPlus;
+}
+
+@keyframes topHeightLess {
+	100% {
+		height: 0px;
+	}
+}
+
+.topHeightLess {
+	animation-name: topHeightLess;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operações</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="_css/style.css" />
+        <link rel="stylesheet" type="text/css" href="_css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="_css/animate.css" />
+        <script language="javascript" src="_javascript/principal.js"></script>
+        <script type="text/javascript" src="_javascript/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("body",parent.document).append($("<div id='legenda'></div>"));
+                $("#calculadora").hover(function(){
+                    $("#calculadora img").attr("src","_imagens/calculadora-azul.png");
+                    $("#legenda",parent.document).show().text("Calculadora").offset({left:$("#orc",parent.document).offset().left-$("#legenda",parent.document).width()-30,top: $("#orc",parent.document).offset().top+$("#calculadora").offset().top+$("#calculadora").height()/2-$("#legenda",parent.document).height()/2});
+                },function(){
+                    $("#calculadora img").attr("src","_imagens/calculadora-branco.png");
+                    $("#legenda",parent.document).hide();
+                });
+
+                $("#conteudos").hover(function(){
+                    $("#conteudos img").attr("src","_imagens/conteudos-azul.png");
+                    $("#legenda",parent.document).show().text("Conteúdos").offset({left:$("#orc",parent.document).offset().left-$("#legenda",parent.document).width()-30,top: $("#orc",parent.document).offset().top+$("#conteudos").offset().top+$("#conteudos").height()/2-$("#legenda",parent.document).height()/2});
+                },function(){
+                    $("#conteudos img").attr("src","_imagens/conteudos-branco.png");
+                    $("#legenda",parent.document).hide();
+                });
+
+                $("#exercicios").hover(function(){
+                    $("#exercicios img").attr("src","_imagens/exercicios-azul.png");
+                    $("#legenda",parent.document).show().text("Exercicios").offset({left:$("#orc",parent.document).offset().left-$("#legenda",parent.document).width()-30,top: $("#orc",parent.document).offset().top+$("#exercicios").offset().top+$("#exercicios").height()/2-$("#legenda",parent.document).height()/2});
+                },function(){
+                    $("#exercicios img").attr("src","_imagens/exercicios-branco.png");
+                    $("#legenda",parent.document).hide();
+                });
+                $("#calculadora").trigger("mouseover");
+                $("#conteudos").trigger("mouseover");
+                $("#exercicios").trigger("mouseover");
+                $("#calculadora").trigger("mouseout");
+                $("#conteudos").trigger("mouseout");
+                $("#exercicios").trigger("mouseout");
+                $("#conteudos").click(function(){
+                    $("#orc",parent.document).css("right","-25px");
+                });
+                $("nav").mousedown(function(){
+                    $("#orc",parent.document).css("right","-305px");
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <nav>
+            <div id="opcoes">
+                <a href="calculadora" target="_parent"><div id="calculadora"><img src="_imagens/calculadora-branco.png" width="60" height="60" draggable="false" /></div></a>
+                <div id="conteudos"><img src="_imagens/conteudos-branco.png" width="60" height="60" draggable="false" /></div>
+                <a href="exercicios" target="_parent"><div id="exercicios"><img src="_imagens/exercicios-branco.png" width="60" height="60" draggable="false" /></div></a>
+            </div>
+        </nav>
+
+        <section id="conteudosOp">
+            <header>
+                <h1>Conteúdos</h1>
+            </header>
+            <table id="op" class="o">
+                <tr><td id='soma'><a href='conteudos/soma' target='_parent'><div>
+                        <img src='_imagens/soma-operacoes-icone-redemath.png'/>
+                        Soma</div></a></td><td id='sub'><a href='conteudos/subtracao' target='_parent'><div>
+                                <img src='_imagens/subtracao-operacoes-icone-redemath.png' />
+                                Subtração</div></a></td></tr>
+                <tr><td id='mult'><a href='conteudos/multiplicacao' target='_parent'><div>
+                        <img src='_imagens/multiplicacao-operacoes-icone-redemath.png' />
+                        Multiplicação</div></a></td>
+                        <td id='div'><a href='conteudos/divisao' target='_parent'><div>
+                                <img src='_imagens/divisao-operacoes-icone-redemath.png' />
+                                Divisão</div></a></td></tr>
+                <tr><td id='eqc1'><a href='conteudos/equacao_do_primeiro_grau' target='_parent'><div>
+            <img src='_imagens/equacao1-operacoes-icone-redemath.png' />
+            Equação do 1°</div></a></td><td id="eqc2"><a href="conteudos/equacao_do_segundo_grau" target="_parent"><div><img src="_imagens/equacao2-operacoes-icone-redemath.png" />Equação do 2°</div></a></td></tr>
+            </table>
+        </section>
+    </body>
+</html>

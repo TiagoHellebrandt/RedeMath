@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+/* 
+	*Folha de estilo CSS 
+	*Autor: Tiago Hellebrandt Silva
+*/
+
+#iconeSm {
+	background: url("../_imagens/soma-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeSb {
+	background: url("../_imagens/subtracao-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeMt {
+	background: url("../_imagens/multiplicacao-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeDv {
+	background: url("../_imagens/divisao-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeEqc1 {
+	background: url("../_imagens/eqc1-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeEqc2 {
+	background: url("../_imagens/eqc2-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeMmc {
+	background: url("../_imagens/mmc-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeMdc {
+	background: url("../_imagens/mdc-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeExn {
+	background: url("../_imagens/exNum-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeDt {
+	background: url("../_imagens/dtb-icone-redemath-branco.png") 15px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeRq {
+	background: url("../_imagens/rzQrd-icone-redemath-branco.png") 10px 0px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeR3s {
+	background: url("../_imagens/regrade3-icone-redemath-pequeno.png") 10px -5px no-repeat;
+	background-color: #90ee90;
+}
+
+#iconeJr {
+	background: url("../_imagens/juros-icone-redemath-branco.png") 10px -5px no-repeat;
+	background-color: #90ee90;
+}
+
+#calculosIcn {
+	margin-top: 180px;
+	border: 1px dashed #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icone {
+	position: relative;
+	margin: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+	display: inline-block;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.icone:hover {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	width: 155px;
+	height: 155px;
+}
+
+.icone div {
+	position: absolute;
+	color: #ffffff;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	background-color: #6dee6d;
+	width: 86.9%;
+	padding: 10px;
+	bottom: 0px;
+	font-size: 15px;
+}
+
+.infoOp {
+	position: fixed;
+	display: none;
+	width: 400px;
+	height: 300px;
+	max-width: 95%;
+	background-color: #ffffff;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 190px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	border-radius: 2px;
+}
+
+.infoOp h1 {
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.infoOp p {
+	font-family: Verdana,sans-serif;
+	font-size: 16px;
+	text-indent: 20px;
+	margin: 10px;
+}
+
+.infoOp img {
+	position: relative;
+	max-width: 95%;
+	margin-left: 2.5%;
+	margin-top: 30px;
+}
+
+.infoMcc img {
+	margin-top: 0px;
+	margin-left: 8%;
+}
+
+.infoOp input {
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+	border-radius: 2px;
+	padding: 10px;
+	transition: 0.5s;
+	position: relative;
+	cursor: pointer;
+	margin-top: 40px;
+}
+
+.infoMcc input {
+	margin-top: 100px;
+}
+
+.infoOp input[value="Fechar"]{
+	border: 2px solid #00a2ff;
+	background-color: #ffffff;
+	color: #00a2ff;
+	margin-left: 10px;
+	float: left;
+}
+
+.infoOp input[value="Fechar"]:hover{
+	background-color: #00a2ff;
+	color: #ffffff;
+}
+
+.infoOp input[value="Tentar"] {
+	border: 2px solid #90ee90;
+	background-color: #ffffff;
+	color: #90ee90;
+	margin-right: 10px;
+	float: right;
+}
+
+.infoOp input[value="Tentar"]:hover {
+	background-color: #90ee90;
+	color: #ffffff;
+}
+
+#sombraBloqueio {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+}
